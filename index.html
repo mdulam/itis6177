@@ -20,9 +20,9 @@
         axios.get("http://159.65.32.112:3000/")
  .then(resp=>{
      console.log(resp)
-     var data = document.createElement('div');
-     data.innerHTML = resp.data.datetime;
-     document.getElementById('date').appendChild(data);
+     var date = document.createElement('div');
+     date.innerHTML = resp.data;
+     document.getElementById('date').appendChild(date);
  });
     }
 
